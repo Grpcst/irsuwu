@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home</title>
+
+
+    <!-- Bootstrap -->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	
+	   <link rel = "stylesheet" type="text/css" href="style.css">
+
+     <!--Adding favicon
+     <link rel="icon" href="images/favicon.ico" type="favicon/ico">
+     -->
+     
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+     <div class = "row">
+
+    <div class = "col-md-4">
+        <img src="logo.jpg" id="logo">
+
+        <h1 id = "h1"><b>IRS UWU 2017</b></h1>
+    </div>
+
+        <div class="col-md-8">
+          <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="home.html">
+                Home
+              </a>
+          </div>  
+
+           <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="keydates.html">
+                Key Dates</a>
+          </div>
+          <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="aboutus.html">
+                About Us
+              </a>
+          </div>  
+
+          <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="contactus.html">
+                Contact Us
+              </a>
+          </div> 
+           <div class = "col-md-2 col-md-push-1 menuItem">
+            <a href="login2.php">
+                Login
+              </a>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!--Slide show-->
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <div class="img-responsive">
+          
+          <img class="mySlides"  src="blue.jpg">
+          <img class="mySlides"  src="purple.jpg">
+          <img class="mySlides"  src="a.jpg">
+          <img class="mySlides"  src="c.jpg">
+        
+    </div>
+    </div>
+    </div>  
+      
+
+      <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 3000); // Change image every 3 seconds
+      }
+      </script>
+      
+      <br><br>
+    <!--Slide show closed-->
+  <div class="container">
+    <div class="para">
+      <div class="col-md-3" id ="p1">
+         <h5 id="h5h1"><b>CALL FOR PAPERS</b></h5>
+          <p>
+          Accelerated Life Testing
+          Big Data and IoT Applications in R&M
+          Business Process Improvement
+          Design Optimization <a href="p1.html">read More</a>
+          </p>
+      </div>
+
+      <div class="col-md-3" id="p2">
+        <h5 id="h5h2"><b>RECENT ANNOUNCEMENTS</b></h5>
+        <p>
+          he deadline for submission has been extended to 15 September, 2016 in response to numerous <a href="p2.html">read More</a>
+        </p>
+      </div>
+      <div class="col-md-3" id="p3">
+        <h5 id="h5h3"><b>KEYNOTE SPEAKERS</b></h5>
+        <p>
+          Prof Michael Pecht is a world renowned expert in reliability and risk assessment. Prof Pecht has a BS in Physics, an MS in Electrical Engineering and an MS <a href="p2.html">read More</a> 
+        </p>
+      </div>
+      <div class="col-md-3" id="p4">
+        <h5 id="h5h4"><b>TRAVEL FROM COLOMBO</b></h5>
+        <p>
+          The most famous attractions include Notre Dame de Paris, the Louvre, the Eiffel Tower, the Pompidou Centre, and the Arc de Triomphe...<a href="p1.html">read More</a>
+        </p>
+      </div>
+      </div>
+      </div>
+
+      <br>
+
+      <div class="col-md-9">
+        <h3 id="h3"> <b>Welcome to IRS UWU 2017</b></h3>
+          <p>Abstract submissions are open</p>
+            
+            <a href="login2.php"><button id ="submitbtn">Submit an Abstract</button></a>
+      </div>
+
+        <!--google map-->
+        <div class = "col-md-3">
+
+          <div id="map" style="width:300px;height:300px;background:yellow"></div>
+
+            <script>
+              function myMap() {
+                  var mapOptions = {
+                      center: new google.maps.LatLng(6.9826, 81.0768),
+                      zoom: 15,
+                      mapTypeId: google.maps.MapTypeId.HYBRID
+                  }
+              var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+              }
+            </script>
+
+            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+            
+        </div>
+   
+
+      <!--Footer-->
+      <div class="footer" id="footer1">
+        <div class="col-md-4" id="cpy"> Copyright &copy by CST_Creations</div>
+
+      </div>    
+
+      <div class="col-md-8" id="footer2">
+        <div>
+          <div class = "col-md-2">
+            <a href="home.html">
+                Home
+              </a>
+          </div>  
+
+           <div class = "col-md-2">
+            <a href="keydates.html">
+                Key Dates</a>
+          </div>
+
+          <div class = "col-md-2">
+            <a href="contactus.html">
+                Contact Us
+              </a>
+          </div>   
+
+          <div class = "col-md-2">
+            <a href="aboutus.html">
+                About Us
+              </a>
+          </div> 
+        
+          
+        </div>
+        
+      </div>  
+      </div>
+  </body>
+  
+  </html>
