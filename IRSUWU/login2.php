@@ -27,22 +27,38 @@
                 </div>
 
                 <form id="defaultForm" method="post" class="form-horizontal" action="login.php">
-                    
+                   <!-- 
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">User Type</label>
+                        <div class="col-md-6">
+                            <select class="form-control" id="exampleSelect1" name="utype">
+                                <option>Select</option>
+                                <option>Author</option>
+                                <option>Reviewer</option>
+                                <option>Track Coordinator</option>
+                                <option>Chairman</option>
+                                <option>Secretary</option>    
+                            </select>
+                        </div>
+                    </div>
+                    -->
+
+
                     <div class="form-group">
                         <label class="col-md-2 control-label">Username</label>
                         <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Your E-mail here" required="true" name="uname"/>
+                            <input type="text" id="username" class="form-control" placeholder="Your E-mail here" required="true" name="uname"/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label">Password</label>
                         <div class="col-md-6">
-                            <input type="Password" class="form-control" placeholder="Your Password here" required="true" name="pword"/>
+                            <input type="Password" id="password" class="form-control" placeholder="Your Password here" required="true" name="pw"/>
                         </div>
                     </div>
                         <div class="form-group">
                             <div class="col-md-6 control-label">
-                                <button type="submit" class="btn btn-warning" name="signup"  value="Sign up">Login</button>
+                                <button type="submit" id="submitbtn" class="btn btn-warning" name="signup"  value="Sign up">Login</button>
                                     Sign-up <a href="reg2.php">Here</a>
                             </div>
                         </div>

@@ -24,13 +24,13 @@
   <div class="container-fluid">
      <div class = "row">
 
-    <div class = "col-md-7">
+    <div class = "col-md-4">
         <img src="logo.jpg" id="logo">
 
-        <h1 id = "h1"><b>International Research Symposium 2017</b></h1>
+        <h1 id = "h1"><b>IRS UWU 2017</b></h1>
     </div>
 
-        <div class="col-md-5">
+        <div class="col-md-8">
           <div class = "col-md-2 col-md-push-1 menuItem">
             <a href="home.html">
                 Home
@@ -57,32 +57,8 @@
       </div>
     </div>
 
-    <div class="container"  >
-    <br><br><br><br>
-      <div class = "col-md-3 " >
-        <h4 style="background-color: lightblue;">Initial Abstract Submission</h4><br>
-          <h3 style="color: darkblue">2016 SEP 15</h3>
+      <h1>Welcome to Reviewer's Page</h1>
 
-    </div>
-        
-      <div class = "col-md-3">
-        <h4 style="background-color: lightblue;">Abstract Submission Deadline</h4><br>
-          <h3 style="color: darkblue">2016 October 15</h3>
-
-    </div>
-        
-      <div class = "col-md-3 ">
-        <h4 style="background-color: lightblue;">Early Bird Registration</h4><br>
-          <h3 style="color: darkblue">2016 October 30</h3>
-
-    </div>
-    
-      <div class = "col-md-3">
-        <h4 style="background-color: lightblue;">Registration Deadline</h4><br>
-          <h3 style="color: darkblue">2016 November 30</h3>
-
-    </div>
-    </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <!--Footer-->
       <div class="footer" id="footer1">

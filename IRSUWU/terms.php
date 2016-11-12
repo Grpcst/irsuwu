@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Key Dates</title>
+    <title>Terms & Conditions</title>
 
 
     <!-- Bootstrap -->
       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	
-	   <link rel = "stylesheet" type="text/css" href="style.css">
+  
+     <link rel = "stylesheet" type="text/css" href="style.css">
 
      <!--Adding favicon
      <link rel="icon" href="images/favicon.ico" type="favicon/ico">
@@ -21,16 +21,16 @@
 
   <body>
 
-  <div class="container-fluid">
+    <div class="container-fluid">
      <div class = "row">
 
-    <div class = "col-md-7">
+    <div class = "col-md-4">
         <img src="logo.jpg" id="logo">
 
-        <h1 id = "h1"><b>International Research Symposium 2017</b></h1>
+        <h1 id = "h1"><b>IRS UWU 2017</b></h1>
     </div>
 
-        <div class="col-md-5">
+        <div class="col-md-8">
           <div class = "col-md-2 col-md-push-1 menuItem">
             <a href="home.html">
                 Home
@@ -57,33 +57,9 @@
       </div>
     </div>
 
-    <div class="container"  >
-    <br><br><br><br>
-      <div class = "col-md-3 " >
-        <h4 style="background-color: lightblue;">Initial Abstract Submission</h4><br>
-          <h3 style="color: darkblue">2016 SEP 15</h3>
-
-    </div>
-        
-      <div class = "col-md-3">
-        <h4 style="background-color: lightblue;">Abstract Submission Deadline</h4><br>
-          <h3 style="color: darkblue">2016 October 15</h3>
-
-    </div>
-        
-      <div class = "col-md-3 ">
-        <h4 style="background-color: lightblue;">Early Bird Registration</h4><br>
-          <h3 style="color: darkblue">2016 October 30</h3>
-
-    </div>
+    <!--Description-->
     
-      <div class = "col-md-3">
-        <h4 style="background-color: lightblue;">Registration Deadline</h4><br>
-          <h3 style="color: darkblue">2016 November 30</h3>
-
-    </div>
-    </div>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <!--Footer-->
       <div class="footer" id="footer1">
         <div class="col-md-4" id="cpy"> Copyright &copy by CST_Creations</div>

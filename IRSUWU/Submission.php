@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Submissions</title>
+    <title>Abstract Submission</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label">Title</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" required="true"/>
+                            <input type="text" id="title" class="form-control" name="title" required="true"/>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label">Keywords</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="keyword" required="true"/>
+                            <input type="text" id="keywords" class="form-control" name="keyword" required="true"/>
                         </div>
                     </div>
 					
@@ -91,12 +91,12 @@
                         <div class="col-md-10" name="ppttype">
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="presentation" value="oral" /> Oral
+                                    <input type="radio" id="oral" name="presentation" value="oral" /> Oral
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="presentation" value="pposter" /> Poster
+                                    <input type="radio" id="poster" name="presentation" value="pposter" /> Poster
                                 </label>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                         <div class="col-md-6 control-label">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name="agree" value="agree" /> I agree to Terms and Conditions 
+                                    <input type="checkbox" name="agree" value="agree" /> I agree to <a href="terms.php">Terms and Conditions</a> 
                                 </label>
                             </div>
                         </div>
@@ -121,8 +121,8 @@
 					
                     <div class="form-group">
                         <div class="col-md-4 control-label">
-                            <button type="submit" class="btn btn-warning" name="signup"  value="Sign up">Submit</button>
-                            <button type="reset" class="btn btn-warning" name="clear"  value="Sign up">Clear</button>
+                            <button type="submit" class="btn btn-warning" name="signup" id="btnsubmit"  value="Sign up">Submit</button>
+                            <button type="reset" class="btn btn-warning" name="clear"  id="btnclear" value="Sign up">Clear</button>
                         </div>
                     </div>
                 </form>

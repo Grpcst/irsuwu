@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Submissions</title>
+    <title>Submission Details</title>
 
 
     <!-- Bootstrap -->
@@ -24,13 +24,13 @@
   <div class="container-fluid">
      <div class = "row">
 
-    <div class = "col-md-4">
+    <div class = "col-md-7">
         <img src="logo.jpg" id="logo">
 
-        <h1 id = "h1"><b>IRS UWU 2017</b></h1>
+        <h1 id = "h1"><b>International Research Symposium 2017</b></h1>
     </div>
 
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class = "col-md-2 col-md-push-1 menuItem">
             <a href="home.html">
                 Home
@@ -120,7 +120,7 @@
       </div>
          
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
         
         
 
