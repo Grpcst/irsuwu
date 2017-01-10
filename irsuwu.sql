@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2016 at 06:59 AM
+-- Generation Time: Nov 09, 2016 at 06:44 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `abstract` (
   `modifiedDate` date NOT NULL,
   `status` varchar(6) NOT NULL DEFAULT 'p',
   PRIMARY KEY (`AbstractID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
 
 --
 -- Dumping data for table `abstract`
@@ -51,7 +51,13 @@ INSERT INTO `abstract` (`AuthorID`, `AbstractID`, `title`, `abstract`, `author`,
 (0, 13, 't', 't', 't', 't', 'Mangement', 'oral', 'uploads/CST362-3 Pixel Relationship.pdf', '0000-00-00', '0000-00-00', 'p'),
 (0, 14, 'c', 'c', 'c', 'c', 'Science and Technolo', 'pposter', 'uploads/Histogram equilization.pdf', '2016-11-03', '0000-00-00', 'p'),
 (0, 15, 'tutrw', 'eggekgriuwegriuwgriow', 'diuwgfriuhfroiqh', 'iqug', 'Computer Science', 'oral', 'uploads/CST362-3 Introduction.pdf', '2016-11-03', '0000-00-00', 'p'),
-(0, 16, 'Digital image processing', 'tfidsgbfkjdsbfgousgf kdgo;ruwgsj fkjguesbfkjwebfkjgs', 'sajith nirmana', 'jcgiue', 'Animal Science', 'oral', 'uploads/CST362-3 Introduction.pdf', '2016-11-03', '0000-00-00', 'p');
+(0, 16, 'Digital image processing', 'tfidsgbfkjdsbfgousgf kdgo;ruwgsj fkjguesbfkjwebfkjgs', 'sajith nirmana', 'jcgiue', 'Animal Science', 'oral', 'uploads/CST362-3 Introduction.pdf', '2016-11-03', '0000-00-00', 'p'),
+(0, 17, 'dip', 'dsgfilugsfiugskfjbvskjvc jls', 'gcjacjafcdf', 'dgkgfdkugf', 'Computer Science', 'oral', 'uploads/CST362-3 Introduction.pdf', '2016-11-08', '0000-00-00', 'p'),
+(0, 18, 'gfkjg', 'yftydytdtg\r\n', 'hdhgdjfk\r\n\r\n\r\n', 'dytdytdty', 'Science and Technolo', 'pposter', 'uploads/CST362-3 Pixel Relationship.pdf', '2016-11-08', '0000-00-00', 'p'),
+(0, 19, 'q', 'q', 'q', 'q', 'Science and Technolo', 'pposter', 'uploads/CST362-3 Digital Image Processing-2.pdf', '2016-11-08', '0000-00-00', 'p'),
+(0, 20, 'a', 'a', 'a', 'a', 'Science and Technolo', 'oral', 'uploads/CST362-3 Introduction.pdf', '2016-11-08', '0000-00-00', 'p'),
+(0, 21, 'd', '\r\ndfsfs\r\n\r\n\r\n', 'dgs', 'wrg', 'Science and Technolo', 'oral', 'uploads/CST362-3 Arithmetic Operations in Images.pdf', '2016-11-08', '0000-00-00', 'p'),
+(0, 22, 'yyyyy', 'yyyyy\r\n', 'yyyyyy', 'yyyyy', 'Animal Science', 'oral', 'uploads/Histogram equilization.pdf', '2016-11-08', '0000-00-00', 'p');
 
 -- --------------------------------------------------------
 
@@ -93,41 +99,26 @@ INSERT INTO `login` (`userType`, `uname`, `pword`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `register` (
-  `userType` varchar(20) NOT NULL,
-  `fname` varchar(8) NOT NULL,
-  `lname` varchar(8) NOT NULL,
-  `org` varchar(10) NOT NULL,
-  `city` varchar(8) NOT NULL,
-  `contactNo` int(10) NOT NULL,
-  `email` varchar(15) NOT NULL,
-  `pw` varchar(8) NOT NULL
+  `role` varchar(255) NOT NULL DEFAULT 'author',
+  `fname` text NOT NULL,
+  `lname` text NOT NULL,
+  `org` varchar(255) NOT NULL,
+  `city` text NOT NULL,
+  `contactNo` int(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `pw` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `register`
 --
 
-INSERT INTO `register` (`userType`, `fname`, `lname`, `org`, `city`, `contactNo`, `email`, `pw`) VALUES
-('', '', '', '', 'as', 1233, '', 'as'),
-('', '', '', '', 'asd', 124, '', 'asds'),
-('', 'a', 's', '', 'df', 23242, '', 'qwe'),
-('', 'x', 'x', '', 'x', 0, '', 'o'),
-('', '', '', '', 'q', 23654, '', 'q'),
-('', 'tt', 'tt', '', 'tt', 98, '', '123t'),
-('', 'uwu', 'uwu', '', 'uwu', 98, '', '123u'),
-('', '', '', '', 'w', 1, '', 'w'),
-('', '', '', '', 'qwe', 12324, '', 'qw'),
-('', 'x', 'x', '', 'x', 0, '', 'x'),
-('', 'uwu', 'uwu', '', 'uwu', 98, 'uwu@gmail.com', '123u'),
-('', 'uwu', 'uwu', '', 'uwu', 98, 'uwu@gmail.com', '123u'),
-('', 'uwu', 'uwu', '', 'uwu', 98, 'uwu@gmail.com', '123u'),
-('', 'uwu', 'uwu', '', 'uwu', 98, 'uwu@gmail.com', '123u'),
-('', 'tharushi', 'ediriwee', '', 'badulla', 987654, 'te@gmail.com', '123T'),
-('', 'tharushi', 'ediriwee', '', 'badulla', 987654, 'te@gmail.com', '123T'),
-('', 'yy', 'yy', '', 'yy', 0, 'yy', '1yy'),
-('', 'kk', 'kk', '', 'kk', 987, 'kk', '1k'),
-('', 'kk', 'kk', '', 'kk', 987, 'kk', '1k'),
-('', 'kk', 'kk', '', 'kk', 987, 'kk', '1k');
+INSERT INTO `register` (`role`, `fname`, `lname`, `org`, `city`, `contactNo`, `email`, `pw`) VALUES
+('admin', 'sajith', 'wijerath', 'irsuwu', 'kurunega', 71539620, 'sajithkasn@gmai', 'abc123'),
+('admin', 'sajith', 'wijerathne', 'irsuwu', 'kurunegala', 715396120, 'sajithkasn@gmail.com', 'abc123'),
+('admin', 'saj', 'wij', 'irsuwu', 'badulla', 772023948, 'saj', 'wij'),
+('author', 'inod', 'wagachchi', 'irsuwu', 'matara', 710491213, 'inod', 'waga'),
+('trackcoordinator', 'lahiru', 'liyanage', 'irsuwu', 'Minuwangoda', 711234111, 'lahiru@gmail.com', 'paba');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
